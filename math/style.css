@@ -1,0 +1,100 @@
+body {
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+
+  background: linear-gradient(180deg, #00695c, #004d40);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -z-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  color: #b2dfdb;
+}
+
+cite {
+  color: #e0f2f1;
+}
+
+#num {
+  height: 50px;
+  border-radius: 0px;
+  line-height: 35px;
+  font-size: 1.5em;
+}
+
+#num:active,
+#num:focus {
+  border: 2px solid #00897b;
+}
+
+.btn-rec {
+  position: relative;
+  display: inline-block;
+  width: 166px;
+  height: 45px;
+  font-size: 14px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-rec svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-rec svg rect {
+  stroke: #ffffff;
+  stroke-width: 6;
+  stroke-dasharray: 422, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 900ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 900ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 900ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-rec:hover svg rect {
+  stroke-width: 10;
+  stroke-dasharray: 110, 312;
+  stroke-dashoffset: 183;
+}
+
+#write {
+  margin-top: 25px;
+  font-size: 1.5em;
+  color: #ffffff;
+}

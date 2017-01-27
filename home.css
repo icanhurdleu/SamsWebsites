@@ -1,0 +1,331 @@
+
+/*
+GENERAL STYLE
+*/
+
+
+* {
+	font-family: 'Lato';
+}
+
+body {
+	background: url(img/geometry2.png);
+	/* background from subtlepatterns.com */
+}
+
+
+/*
+MENU OVERLAYS
+*/
+
+
+.nav-overlay {
+  position: absolute;
+  height: calc(100vh - 50px);
+  width: 100%;
+  text-align: center;
+  z-index: 2000;
+  display: none;
+}
+#about-overlay {
+  background-color: rgba(26, 35, 126, .8);
+}
+#list-overlay {
+  background-color: rgba(183, 28, 28, .8);
+}
+#contact-overlay {
+  background-color: rgba(49, 27, 146, .8);
+}
+
+.exit-overlay {
+	font-size: 3em;
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	cursor: pointer;
+	color: #fff;
+
+	-webkit-transition: -webkit-transform .5s;
+			transition: transform .5s;
+}
+.exit-overlay:hover {
+	font-weight: bold;
+	-webkit-transform: rotate(360deg);
+		    transform: rotate(360deg);
+}
+
+.nav-control-item {
+	height: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	cursor: pointer;
+	font-size: 1.1em;
+	padding-top: 15px;
+	box-sizing: border-box;
+}
+
+.all-panel-control {
+	-webkit-transition: letter-spacing .3s ease;
+			transition: letter-spacing .3s ease;	
+}
+.all-closed {
+	letter-spacing: 0px;
+}
+.all-closed:hover {
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+.all-open {
+	letter-spacing: 3px;
+}
+.all-open:hover {
+	letter-spacing: 0px;
+	font-weight: bold;
+}
+
+#nav-about:hover {
+	border-bottom: 5px solid #1a237e;
+}
+#nav-list:hover {
+	border-bottom: 5px solid #b71c1c;
+}
+#nav-contact:hover {
+	border-bottom: 5px solid #311b92;	
+}
+
+.about-open {
+	background-color: rgba(26, 35, 126, .8);
+	color: #fff;
+}
+.list-open {
+	background-color: rgba(183, 23, 23, .8);
+	color: #fff;
+}
+.contact-open {
+	background-color: rgba(49, 27, 146, .8);
+	color: #fff;
+}
+
+
+/*
+OVERLAY CONTENT
+*/
+
+
+.about-overlay-head {
+	font-size: 4em;
+	color: #fff;
+	margin-top: 50px;
+}
+
+.about-overlay-text {
+	font-size: 2em;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.list-overlay-ul {
+	list-style: none;
+	margin-top: 50px;
+}
+
+.list-overlay-link {
+	text-decoration: none !important;
+}
+.list-overlay-link > li {
+	font-size: 1.5em;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transition: letter-spacing .3s ease;
+			transition: letter-spacing .3s ease;
+}
+.list-overlay-link > li:hover {
+	letter-spacing: 5px;
+}
+
+.contact-overlay-ul {
+	list-style: none;
+	margin-top: 50px;
+}
+
+.contact-overlay-link {
+	text-decoration: none !important;
+}
+.contact-overlay-link > li {
+	font-size: 2em;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	-webkit-transition: letter-spacing .3s ease;
+			transition: letter-spacing .3s ease;
+}
+.contact-overlay-link > li:hover {
+	letter-spacing: 5px;
+}
+
+
+/*
+NAV BAR
+*/
+
+
+#title-nav {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/*
+CONTENT STRUCTURE
+*/
+
+
+.content-holder {
+	margin-top: 50px;
+}
+
+.content {
+	height: calc(100vh - 50px);
+	background-color: transparent;
+}
+
+.topic-col {
+	height: 100%;
+	overflow: scroll;
+}
+
+#one {
+	border-right: 1px solid #ccc;
+}
+
+#two {
+	border-right: 1px solid #ccc;
+}
+
+#three {
+
+}
+
+
+/*
+PANEL HEADINGS
+*/
+
+
+.panel-heading {
+	-webkit-transition: background-color .5s ease;
+			transition: background-color .5s ease;
+}
+
+.no-decoration {
+	text-decoration: none !important;
+}
+
+.col-header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.panel-custom {
+	border-radius: 0px;
+}
+
+.panel-title-custom {
+	color: #fff;
+	-webkit-transition: color .5s ease;
+			transition: color .5s ease;
+}
+
+.panel-one {
+	border: 1px solid #1a237e;
+}
+
+.col-one-heading {
+	background-color: #1a237e !important;
+	border-radius: 0px !important;
+}
+.col-one-heading:hover {
+	background-color: #fff !important;
+}
+.col-one-heading:hover .panel-title-custom {
+	color: #1a237e;
+}
+
+
+.panel-two {
+	border: 1px solid #b71c1c;
+}
+
+.col-two-heading {
+	background-color: #b71c1c !important;
+	border-radius: 0px !important;
+}
+.col-two-heading:hover {
+	background-color: #fff !important;
+}
+.col-two-heading:hover .panel-title-custom {
+	color: #b71c1c;
+}
+
+.panel-three {
+	border: 1px solid #311b92;
+}
+
+.col-three-heading {
+	background-color: #311b92 !important;
+	border-radius: 0px !important;
+}
+.col-three-heading:hover {
+	background-color: #fff !important;
+}
+.col-three-heading:hover .panel-title-custom {
+	color: #311b92;
+}
+
+
+/*
+	PANEL BODY CONTROL
+*/
+
+
+.panel-body {
+	position: relative;
+	overflow: hidden;
+	padding-right: 50px;
+}
+.panel-body > p {
+	font-size: 1.1em;
+}
+
+.panel-body-short {
+	max-height: 65px;
+}
+
+.panel-body-long {
+	min-height: 100%;
+}
+
+.panel-img {
+	max-width: 100%;
+}
+
+.panel-expand {
+	position: absolute;
+	font-size: 2em;
+	font-weight: bold;
+	cursor: pointer;
+	top: 2px;
+	right: 20px;
+}
+
+.blue-panel:hover {
+	color: #1a237e;
+}
+.red-panel:hover {
+	color: #b71c1c;
+}
+.purple-panel:hover {
+	color: #311b92;
+}
+
+

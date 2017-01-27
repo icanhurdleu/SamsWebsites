@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dice Roll Test</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+
+      html {
+        margin: none;
+        padding: none;
+        font-family: sans-serif;
+        background-color: #efefef;
+      }
+
+      .dice {
+        height: 200px;
+        width: 200px;
+        box-sizing: border-box;
+        color: #dedede;
+        background-color: #333;
+        margin: auto;
+        margin-top: 100px;
+        font-size: 6em;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 42px;
+      }
+
+      .button-div {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .roll-btn {
+        height: 50px;
+        width: 200px;
+        font-size: 2em;
+        text-align: center;
+        background-color: #3F51B5;
+        color: #fff;
+        border: none;
+      }
+
+    </style>
+
+  </head>
+
+<body>
+
+<div class="dice" id="one">1</div>
+
+<div class="button-div">
+  <button class="roll-btn">Roll!</button>
+</div>
+
+</body>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+
+function rollDie() {
+  var die = Math.ceil(6*Math.random());
+  return die;
+};
+
+function rollSim() {
+
+  document.getElementById("one").innerHTML = rollDie();
+
+  setTimeout(function() {
+    document.getElementById("one").innerHTML = rollDie();
+  }, 100);
+
+  setTimeout(function() {
+    document.getElementById("one").innerHTML = rollDie();
+  }, 200);
+
+  setTimeout(function() {
+    document.getElementById("one").innerHTML = rollDie();
+  }, 300);
+
+  setTimeout(function() {
+    document.getElementById("one").innerHTML = rollDie();
+  }, 400);
+
+  setTimeout(function() {
+    document.getElementById("one").innerHTML = rollDie();
+  }, 500);
+
+};
+
+
+$(".roll-btn").click(function() {
+
+  rollSim();
+
+});
+
+</script>
+
+</html>

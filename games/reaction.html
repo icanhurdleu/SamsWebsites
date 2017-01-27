@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Test Your Reaction!</title>
+
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+ <link rel="stylesheet" type="text/css" href="style.css">
+ 
+ </head>
+
+
+ <body>
+
+ <div id="container">
+
+ 	<div id="top-bar">
+
+ 		<div class="fixed-width">
+ 			<h1>Test Your Reaction Time</h1>
+ 			<h3>Made by <a href="http://samtellis.com">Samuel Ellis</a></h3>
+ 		</div>
+
+ 	</div>
+
+ 	<div id="bottom">
+ 		<div class="fixed-width">
+ 			<!-- <p class="bold">Your times: <span id="time">[0]</span> s</p> -->
+ 			<p class="bold">Your times (in seconds):</p>
+ 			<ul id="time"></ul>
+ 		</div>
+ 	</div>
+
+ 	<div id="main">
+
+ 		<div id="box"></div>
+
+ 		<div class="fixed-width">
+ 			<p id="desc">Click the circles as fast as you can when they appear. 10 will show up and then you will receive a score report. Click 'Start' when ready!</p>
+ 			<div class="button-holder">
+ 				<button id="start">START!</button>
+ 			</div>
+ 		</div>
+
+ 	</div>
+
+ 	<div id="results">
+ 		<div class="fixed-width">
+ 			<p>You're total time was: <span id="sum" class="blue"></span></p>
+ 			<p>You're average time was: <span id="avg" class="blue"></span></p>
+
+ 			<a href="javascript:history.go(0)">RESTART</a>
+ 		</div>
+ 	</div>
+
+ 	</div>
+
+ 	<script type="text/javascript" src="script.js"></script>
+
+ </body>
+</html>

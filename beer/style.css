@@ -1,0 +1,245 @@
+@charset 'UTF-8';
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,html
+	{
+		height: 100%;
+		background: #fff;
+		margin: 0px;
+		padding: 0px;
+	}
+
+		body.is-loading *
+		{
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-o-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-o-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+		}
+
+	body,input,textarea,select
+	{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 19pt;
+		font-weight: 300;
+		line-height: 1.75em;
+	}
+	
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+		{
+			color: inherit;
+			text-decoration: none;
+		}
+
+		h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong
+		{
+			color: #263238;
+		}
+		
+	strong, b
+	{
+		font-weight: 300;
+		color: #666;
+	}
+	
+	em, i
+	{
+		font-style: italic;
+	}
+
+	a
+	{
+		text-decoration: none;
+		color: inherit;
+		border-bottom: dotted 1px rgba(128,128,128,0.5);
+		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		outline: 0;
+	}
+
+		a:hover
+		{
+			color: #E27689;
+			border-bottom-color: rgba(255,255,255,0);
+		}
+
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		height: 100vh;
+		margin: 0px;
+	}
+
+	#main > section {
+		float: left;
+		width: 100%;
+		height: 25vh;
+		clear: none;
+	}
+
+	#main > section > div {
+		width: 10%;
+		float: left;
+		clear: none;
+		height: 100%;
+		text-align: center;
+		padding-top: 8vh;
+		font-size: 1em;
+		font-family: "Source Sans Pro";
+	}
+
+	#main > section.three,section.four > div {
+		color: #ccc;
+	}
+
+	/* Top Row */
+
+	#a {
+		background-color: #FFE699;
+	}
+	#b {
+		background-color: #FFD978;
+	}
+	#c {
+		background-color: #FFCA5A;
+	}
+	#d {
+		background-color: #FFBF43;
+	}
+	#e {
+		background-color: #FCB124;
+	}
+	#f {
+		background-color: #F8A700;
+	}
+	#g {
+		background-color: #F39C00;
+	}
+	#h {
+		background-color: #EA8F00;
+	}
+	#i {
+		background-color: #E68500;
+	}
+	#j {
+		background-color: #DE7C00;
+	}
+
+	/* Second Row */
+
+	#a1 {
+		background-color: #D77200;
+	}
+	#b1 {
+		background-color: #D06900;
+	}
+	#c1 {
+		background-color: #CA6200;
+	}
+	#d1 {
+		background-color: #C35901;
+	}
+	#e1 {
+		background-color: #BB5000;
+	}
+	#f1 {
+		background-color: #B64C00;
+	}
+	#g1 {
+		background-color: #B04500;
+	}
+	#h1 {
+		background-color: #A63E00;
+	}
+	#i1 {
+		background-color: #A03700;
+	}
+	#j1 {
+		background-color: #9C3200;
+	}
+
+	/* Third Row */
+
+	#a2 {
+		background-color: #962D00;
+	}
+	#b2 {
+		background-color: #8F2A00;
+	}
+	#c2 {
+		background-color: #872300;
+	}
+	#d2 {
+		background-color: #811E00;
+	}
+	#e2 {
+		background-color: #7C1A01;
+	}
+	#f2 {
+		background-color: #771900;
+	}
+	#g2 {
+		background-color: #701400;
+	}
+	#h2 {
+		background-color: #6A0E00;
+	}
+	#i2 {
+		background-color: #660D00;
+	}
+	#j2 {
+		background-color: #5E0C00;
+	}
+
+	/* Bottom Row */
+
+	#a3 {
+		background-color: #5A0A03;
+	}
+	#b3 {
+		background-color: #600902;
+	}
+	#c3 {
+		background-color: #530908;
+	}
+	#d3 {
+		background-color: #4B0505;
+	}
+	#e3 {
+		background-color: #460606;
+	}
+	#f3 {
+		background-color: #440607;
+	}
+	#g3 {
+		background-color: #3F0708;
+	}
+	#h3 {
+		background-color: #3A0608;
+	}
+	#i3 {
+		background-color: #3A080B;
+	}
+	#j3 {
+		background-color: #36080A;
+	}
+
+

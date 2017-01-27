@@ -1,0 +1,257 @@
+* {
+  font-family: "Lato";
+}
+
+body {
+  padding-top: 50px;
+}
+
+h3 > a {
+  color: #333;
+  text-decoration: underline;
+}
+a:hover {
+  color: #000;
+}
+
+.template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.affix {
+	position: fixed;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.row-cover {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: -10px;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #333;
+  font-size: 0;
+  line-height: 0;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;  /* left arrow slant */
+  border-right: 30px solid transparent; /* right arrow slant */
+  border-bottom: 30px solid #333; /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+}
+
+.container > .col-md-12 > h1, h3, p {
+  font-family: "Lato";
+}
+
+li {
+  font-family: "Lato";
+  font-size: 20px;
+}
+
+.navbar-default {
+  border-bottom: 0px solid #ff0000;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.jumbotronhead {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: #eeeeee;
+  background-color: #333333;
+}
+.jumbotronhead h1 {
+  line-height: 1;
+  color: inherit;
+}
+.jumbotronhead p {
+  line-height: 1.4;
+}
+.container .jumbotronhead {
+  border-radius: 6px;
+}
+@media screen and (min-width: 768px) {
+  .jumbotronhead {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .container .jumbotronhead {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .jumbotronhead h1 {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+.jumbotronend {
+  padding: 10px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: #222222;
+  background-color: #cccccc;
+}
+.jumbotronend h1 {
+  line-height: 1;
+  color: inherit;
+}
+.jumbotronend p {
+  line-height: 1.4;
+}
+.container .jumbotronend {
+  border-radius: 6px;
+}
+@media screen and (min-width: 768px) {
+  .jumbotronend {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container .jumbotronend {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .jumbotronend h1 {
+    font-size: 63px;
+  }
+}
+
+#page-header {
+  background-image: url("b1.svg");
+  background-repeat: none;
+  background-position: center;
+  min-height: 100vh;
+  padding-left: 15%;
+  padding-right: 25%;
+}
+
+#page-header > p {
+  font-size: 30px;
+}
+
+#page-header > h1 {
+  font-family: "Lato";
+}
+
+.list-group-item-top {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #333333;
+  color: #eeeeee;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.list-group-item-header {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #333333;
+  color: #eeeeee;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.navbar-default .navbar-nav > li {
+  font-size: 14px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555555;
+  background-color: transparent;
+  border-bottom: 4px solid #ff0000;
+}
+
+#started {
+  border-radius: 0px;
+  font-size: 30px;
+  border: 1px solid #333;
+  background-color: transparent;
+  width: 200px;
+  text-decoration: none;
+}
+#started:hover {
+  color: #222;
+  font-weight: bold;
+}
+
+.row-split {
+  border-top: 2px solid #333;
+}
+
+.container > .col-md-12 > p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.container > .col-md-12 > img {
+  max-width: 100%;
+}
+
+.col-md-5 > img {
+  width: 100%;
+}
+
+.wt {
+  margin-top: 25px;
+}
+
+.wt > .col-md-7 > p {
+  font-size: 20px;
+}
+
+.take-away {
+  background-image: url("../img/b1.svg");
+  background-repeat: none;
+  background-position: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 25px;
+}
+.take-away > p {
+  font-size: 25px;
+  font-weight: 400;
+}
+.take-away > h2 {
+  font-size: 40px;
+}
