@@ -1,0 +1,73 @@
+html {
+	background: url(bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	font-family: "Lato", Arial;
+}
+
+#main {
+	text-align: center;
+	color: #555;
+}
+
+#main > p > a {
+	font-size: 2em;
+	transition: color .5s ease;
+	margin-right: 20px;
+}
+
+#main > p > a:hover {
+	transition: color .5s ease;
+	color: #333;
+}
+
+#title {
+	font-size: 4em;
+	margin-bottom: 0;
+}
+
+.desc {
+	margin-top: 0;
+	font-size: 1.5em
+}
+
+#content {
+	max-width: 600px;
+	box-style: border-box;
+	background-color: rgba(1, 1, 1, 0.2);
+	margin: auto;
+	border-radius: 20px;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+#content > p {
+	margin: 0;
+	color: #ddd;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+#content > p > a {
+	text-decoration: none;
+}
+
+#content > p > a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	text-align: center;
+	color: #eee;
+	font-size: 1.2em;
+}

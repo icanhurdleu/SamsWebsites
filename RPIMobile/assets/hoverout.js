@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$('.left-push-menu').mouseenter(function(){
+		$('#left-side-menu').toggleClass('cbp-spmenu-open')
+		$('.page-slide').toggleClass('cbp-spmenu-push-toright')
+	});
+	$('.left-push-menu').mouseleave(function(){
+		$('#left-side-menu').toggleClass('cbp-spmenu-open')
+		$('.page-slide').toggleClass('cbp-spmenu-push-toright')
+	})
+});

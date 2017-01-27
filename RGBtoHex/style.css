@@ -1,0 +1,78 @@
+
+.jumbotron {
+	padding: 5px;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	font-family: "Open Sans";
+	font-weight: 300;
+}
+
+.form-group {
+	text-align: left;
+	font-family: "Open Sans";
+}
+
+.form-group > label {
+	font-size: 20px;
+}
+
+.hex-input {
+	height: 35px;
+	width: 300px;
+}
+
+#calculatehex {
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#hexholder {
+	font-family: "Open Sans";
+	font-size: 75px;
+	text-align: center;
+}
+
+#hex {
+	border: none;
+	width: 300px;
+}
+
+.col-lg-6 > h1 {
+	font-family: "Open Sans";
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+#text1{
+	color: #999;
+}
+#text2 {
+	background-color: #333;
+	color: #999;
+}
+
+.container > .col-lg-4 > div {
+	margin: auto;
+}
+
+.circle {
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	background-color: #999;
+	text-align: center;
+	font-family: "Open Sans";
+	font-size: 40px;
+	padding-top: 40px;
+}
+
+#circle2 {
+	color: #fff;
+}
+
+#circle3 {
+	color: #333;
+}

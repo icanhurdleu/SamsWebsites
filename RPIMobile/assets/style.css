@@ -1,0 +1,473 @@
+
+/* Table of Content
+==================================================
+	#Import Fonts
+	#Reset & Basics
+  #Side Menu
+	#Banner Styling
+	#Button Styling
+	#Grid Layouts
+  #Sections
+  #Lists
+  #Footer
+*/
+
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,300,700,900);
+
+/* #Reset & Basics
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+   .btn {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 1.428571429;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 0px;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+           -o-user-select: none;
+              user-select: none;
+    }
+    .btn:focus {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+    .btn:hover,
+    .btn:focus {
+      color: #333333;
+      text-decoration: none;
+    } 
+
+/* #Div Constructing
+================================================== */		
+
+.column-full {
+	position: relative;
+  	min-height: 1px;
+  	padding-right: 15px;
+  	padding-left: 15px;
+}
+
+@media (min-width: 1200px) {
+  .column-full {
+    float: left;
+  }
+  .column-full {
+    width: 100%;
+  }
+}
+
+/* #Side Menu
+================================================== */
+
+.halfCircleRight {
+     height: 50px;
+     width: 25px;
+     border-top-right-radius: 25px;
+     border-bottom-right-radius: 25px;
+     background: #333;
+     margin-left: 200px;
+     position: absolute;
+     top: 45%;
+     padding-left: 2px;
+}
+.halfCircleRight > i {
+  font-size: 18px;
+  color: #fff;
+  padding-top: 17px;
+}
+
+.left-push-menu {
+  background: transparent;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  left: -200px;
+  display: inline-block;
+}
+.left-menu {
+  background-color: #333;
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.left-push-menu.cbp-spmenu-open {
+  left: 0px;
+}
+.page-slide {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+.cbp-spmenu-push-toright {
+  left: 200px;
+}
+
+.page-slide,
+.left-push-menu {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.cbp-spmenu h3 {
+  color: #fff;
+  font-size: 1.9em;
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  background: #B61C14;
+  font-family: "Lato";
+}
+
+.cbp-spmenu a {
+  display: block;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+  border-bottom: 1px solid #D5291F;
+  padding: 1em;
+  text-decoration: none;
+  font-family: "Lato";
+  font-weight: 300;
+}
+.cbp-spmenu a:hover {
+  background: #D5291F;
+}
+
+/* #Banner Styling
+================================================== */
+
+.headerwrap {
+	/*background: url(../assets/images/RPIbuilding.jpg) no-repeat center top;*/
+  background-color: #B61C14;
+	margin-top: 0px;
+	padding-top:100px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 400px;
+	max-height: 500px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header-text {
+	text-align: left;
+	padding-left: 50px;
+	font-family: "Lato";
+  font-weight: 300;
+}
+
+.header-text h1 {
+	line-height: 1;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .header-text h1 {
+    font-size: 120px;
+  }
+
+}
+
+.header-text p {
+	line-height: 1;
+  	color: #fff;
+  	font-size: 30px;
+  	padding-top: 20px;
+}
+
+.btn-group {
+  margin-top: 50px;
+}
+.fa {
+  margin-right: 10px;
+}
+
+/* #Button Styling
+================================================== */
+
+.btn-download {
+  color: #fff;
+  background-color: #B61C14;
+  border: 1px solid #fff;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.btn-download:hover,
+.btn-download:focus,
+.btn-download:active,
+.btn-download.active,
+.open .dropdown-toggle.btn-download {
+  color: #B61C14;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* #Grid Layouts
+================================================== */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.jumbotron {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-color: #eeeeee;
+}
+
+.column {
+  float: left;
+  margin-left: 5%;
+}
+
+.column:first-child {
+  margin-left: 0%;
+}
+
+@media (min-width: 992px){
+
+  .column.two-thirds {
+    width: 60%;
+  }
+
+  .column.one-third {
+    width: 35%;
+  }
+/*  .column.one-third > img {
+    width: 100%;
+  }*/
+
+}
+
+.column.two-thirds {
+  float: left;
+}
+
+.column.one-third {
+  float: left;
+}
+.column.one-third > img {
+  width: 100%;
+}
+
+/* #Sections
+================================================== */
+section {
+  min-height: 400px;
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-family: "Lato";
+  font-weight: 300;
+  color: #333 !important;
+}
+section > h1 {
+  font-size: 50px;
+  margin-bottom: 20px;  
+}
+section > p {
+  font-size: 25px;
+}
+
+section > div > h1 {
+  font-size: 50px;
+  margin-bottom: 20px;  
+}
+section > div > p {
+  font-size: 25px;
+  line-height: 40px;
+  padding-bottom: 25px;
+}
+
+.bar {
+  background-color: #333;
+  height: 5px;
+  width: 100%;
+}
+.thinbar {
+  background-color: #333;
+  height: 2px;
+  width: 100%;
+}
+
+.60width {
+  width: 60%;
+}
+
+.40width {
+  width: 40%;
+}
+
+/* #Lists
+================================================== */
+
+.list {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #333;
+  text-align: center;
+  border-bottom: 1px solid #B61C14;
+}
+
+.list-last {
+  border-bottom: none;
+}
+
+/* #Footer
+================================================== */
+
+.footerwrap {
+  background-color: #333;
+  font-family: "Lato";
+  font-weight: 300;
+  margin-top: 0px;
+  padding-top:10px;
+  padding-left: 50px;
+  /*height: 200px;*/
+  padding-bottom: 10px;
+  width: 100%;
+  
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.footerwrap > h1 {
+  font-family: "Lato";
+  font-weight: 300;
+  color: #fff;
+  font-size: 25px;
+}
+
+.footerwrap > p {
+  color: #aaa;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.footerwrap > p > a {
+  text-decoration: none;
+  color: #aaa;
+}
+.footerwrap > p > a:hover {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.right-shift {
+  float: right;
+  padding-right: 75px;
+}
+.right-shift > a {
+  text-decoration: none;
+  color: #bbb;
+}
